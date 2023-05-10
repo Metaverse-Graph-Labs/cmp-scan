@@ -1,10 +1,10 @@
 import { expect } from "chai";
 import { APIInstance, axios, WAITING_TIME } from "./_utils/setup";
-import { ContractAPIs } from "./_utils/cmp-apis";
+import { TokenAPIs } from "./_utils/cmp-apis";
 import { setTimeout } from "timers/promises";
 
-describe("Contract APIs", function () {
-  ContractAPIs.forEach((api: APIInstance) => {
+describe("Token APIs", function () {
+  TokenAPIs.forEach((api: APIInstance) => {
     it(api.title, async function () {
       await setTimeout(WAITING_TIME);
       try {

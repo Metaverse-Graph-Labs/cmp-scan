@@ -28,7 +28,7 @@ const config: HardhatUserConfig = {
         network: "caduceus",
         chainId: 256256,
         urls: {
-          apiURL: "https://cmpscan.io/api",
+          apiURL: "https://api.cmpscan.io/api",
           browserURL: "https://cmpscan.io",
         },
       },
