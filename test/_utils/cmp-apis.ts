@@ -7,11 +7,11 @@ const BASE_URI = "https://api.cmpscan.io/api?";
 export const AccountAPIs: APIInstance[] = [
   {
     title: "Get CMP Balance for a single Address",
-    path: `${BASE_URI}module=account&action=balance&address=0xf2519c98a7c5920e28a1e3514726e224c7e27972&tag=latestmodule=stats&action=cmpprice&apikey=${API_KEY}`,
+    path: `${BASE_URI}module=account&action=balance&address=0xf2519c98a7c5920e28a1e3514726e224c7e27972&tag=latest&apikey=${API_KEY}`,
   },
   {
     title: "Get CMP Balance for multiple Addresses in a single call",
-    path: `${BASE_URI}module=account&action=balancemulti&address=0xf2519c98a7c5920e28a1e3514726e224c7e27972,0xd3c22074bdbbb952b9aa861724448f14d2ac57f7,0x99135c5e7a6d3343f3239c50d8f4fd4d12594c55&tag=latestmodule=stats&action=cmpprice&apikey=${API_KEY}`,
+    path: `${BASE_URI}module=account&action=balancemulti&address=0xf2519c98a7c5920e28a1e3514726e224c7e27972,0xd3c22074bdbbb952b9aa861724448f14d2ac57f7,0x99135c5e7a6d3343f3239c50d8f4fd4d12594c55&tag=latest&apikey=${API_KEY}`,
   },
   {
     title: "Get CRC20-Token Account Balance for TokenContractAddress",
@@ -19,36 +19,36 @@ export const AccountAPIs: APIInstance[] = [
   },
   {
     title: "Get a list of 'Normal' Transactions By Address - 1",
-    path: `${BASE_URI}module=account&action=txlist&address=0x3b03a6e6cf79a7e1d5af56e4eb3c1e1b04cffa7d&startblock=2527710&endblock=2541962&sort=ascmodule=stats&action=cmpprice&apikey=${API_KEY}`,
+    path: `${BASE_URI}module=account&action=txlist&address=0x3b03a6e6cf79a7e1d5af56e4eb3c1e1b04cffa7d&startblock=2527710&endblock=2541962&sort=asc&apikey=${API_KEY}`,
   },
 
   {
     title: "Get a list of 'Normal' Transactions By Address - 2",
-    path: `${BASE_URI}module=account&action=txlist&address=0x3b03a6e6cf79a7e1d5af56e4eb3c1e1b04cffa7d&startblock=2527710&endblock=2541962&page=0&offset=100&sort=ascmodule=stats&action=cmpprice&apikey=${API_KEY}`,
+    path: `${BASE_URI}module=account&action=txlist&address=0x3b03a6e6cf79a7e1d5af56e4eb3c1e1b04cffa7d&startblock=2527710&endblock=2541962&page=0&offset=100&sort=asc&apikey=${API_KEY}`,
   },
   {
     title: "Get a list of 'Internal' Transactions by Address - 1",
-    path: `${BASE_URI}module=account&action=txlistinternal&address=0x1fcba3cb797465f38839f48ca7c9cda9d9aac28b&startblock=2825812&endblock=2825860&sort=ascmodule=stats&action=cmpprice&apikey=${API_KEY}`,
+    path: `${BASE_URI}module=account&action=txlistinternal&address=0x1fcba3cb797465f38839f48ca7c9cda9d9aac28b&startblock=2825812&endblock=2825860&sort=asc&apikey=${API_KEY}`,
   },
   {
     title: "Get a list of 'Internal' Transactions by Address - 2",
-    path: `${BASE_URI}module=account&action=txlistinternal&address=0x1fcba3cb797465f38839f48ca7c9cda9d9aac28b&startblock=2825812&endblock=2825860&sort=asc&page=0&offset=10module=stats&action=cmpprice&apikey=${API_KEY}`,
+    path: `${BASE_URI}module=account&action=txlistinternal&address=0x1fcba3cb797465f38839f48ca7c9cda9d9aac28b&startblock=2825812&endblock=2825860&sort=asc&page=0&offset=10&apikey=${API_KEY}`,
   },
   {
     title: "Get 'Internal Transactions' by Transaction Hash",
-    path: `${BASE_URI}module=account&action=txlistinternal&txhash=0x9602d3fc27ac45da81c24fe0fe92bfb358e5abc00257c4d4df1a4508cc2cca63module=stats&action=cmpprice&apikey=${API_KEY}`,
+    path: `${BASE_URI}module=account&action=txlistinternal&txhash=0x9602d3fc27ac45da81c24fe0fe92bfb358e5abc00257c4d4df1a4508cc2cca63&apikey=${API_KEY}`,
   },
   {
     title: "Get 'Internal Transactions' by Block Range",
-    path: `${BASE_URI}module=account&action=txlistinternal&startblock=2802313&endblock=2825860&sort=asc&page=0&offset=10module=stats&action=cmpprice&apikey=${API_KEY}`,
+    path: `${BASE_URI}module=account&action=txlistinternal&startblock=2802313&endblock=2802317&sort=asc&page=0&offset=10&apikey=${API_KEY}`,
   },
   {
     title: "Get a list of 'CRC-20 - Token Transfer Events' by Address - 1",
-    path: `${BASE_URI}module=account&action=tokentx&address=0xa2de1fccdce3774c99a33f9b23abe4063f937129&startblock=2799201&endblock=2799211&sort=ascmodule=stats&action=cmpprice&apikey=${API_KEY}`,
+    path: `${BASE_URI}module=account&action=tokentx&address=0xa2de1fccdce3774c99a33f9b23abe4063f937129&startblock=2799201&endblock=2799211&sort=asc&apikey=${API_KEY}`,
   },
   {
     title: "Get a list of 'CRC-20 - Token Transfer Events' by Address - 2",
-    path: `${BASE_URI}module=account&action=tokentx&address=0xa2de1fccdce3774c99a33f9b23abe4063f937129&startblock=2799201&endblock=2799211&sort=asc&page=0&offset=2module=stats&action=cmpprice&apikey=${API_KEY}`,
+    path: `${BASE_URI}module=account&action=tokentx&address=0xa2de1fccdce3774c99a33f9b23abe4063f937129&startblock=2799201&endblock=2799211&sort=asc&page=0&offset=2&apikey=${API_KEY}`,
   },
   {
     title: "Get a list of 'CRC-20 - Token Transfer Events' by Address - 3",
@@ -202,4 +202,17 @@ export const ProxyAPIs: APIInstance[] = [
   },
 ];
 
-// TODO: NFT APIs
+export const NFTAPIs: APIInstance[] = [
+  {
+    title: "Get Contract Metadata",
+    path: `${BASE_URI}module=nft&action=getcontractmetadata&apikey=${API_KEY}&contractAddress=0x8cee805fe5fa49e81266fcbc27f37d85062c1707`,
+  },
+  {
+    title: "Get NFT Metadata",
+    path: `${BASE_URI}module=nft&action=getnftmetadata&apikey=${API_KEY}&contractAddress=0x5bd985f8caa0f4e5ad5124af429d99d1794a94c4&tokenId=0&tokenType=ERC1155`,
+  },
+  {
+    title: "Get NFTs",
+    path: `${BASE_URI}module=nft&action=getnfts&apikey=${API_KEY}&owner=0xab4ac15f46cc0d815da7aad30ff31060c0171dce&withMetadata=true&pageSize=10`,
+  },
+];
