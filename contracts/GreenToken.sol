@@ -6,9 +6,11 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract GreenToken is ERC20, ERC20Burnable, Ownable {
-    constructor() ERC20("Green Token", "GREEN") {}
+    mapping (address => uint) mints;
+    constructor() ERC20("Green Token # 2", "GREEN2") {}
 
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);
+        mints[msg.sender] = amount;
     }
 }
