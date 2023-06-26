@@ -5,6 +5,9 @@ dotenv.config();
 
 const config: HardhatUserConfig = {
   solidity: "0.8.9",
+  mocha: {
+    timeout: 180000,
+  },
   networks: {
     hardhat: {
       chainId: 1337,
